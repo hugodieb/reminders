@@ -1,0 +1,4 @@
+# Remover runners não mais utilizaveis:
+	- deletar tbm o runner no gitlab-runner > settings > ci/cd > runner
+	- sudo nano /etc/gitlab-runner/config.toml (*deletar os runners que não uso mais*)
+	- gitlab-runner restart
