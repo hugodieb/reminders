@@ -1,0 +1,19 @@
+# Install do awscli
+	- logar com usuario gitlab-runner
+	- cd gitlab-runner/
+    - sudo apt-get update   
+    - cd gitlab-runner/    
+   	- sudo apt-get install python3-pip
+   	- pip3 install awscli --upgrade --user
+   	- python3 -m awscli --version
+   	- aws --version
+   	- python3 -m awscli --version
+   	- aws configure  
+   	- $(aws ecr get-login --no-include-email --region us-east-2)
+     
+
+# Criar um profile com credenciais para $AWS_PROFILE:
+	- logar como usuario gitlab-runner
+	- entrar em gitlab-runner
+	- aws configure --profile eumesmo (entra com as credenciais para o profile eumesmo)
+	- criar uma env dentro de .bashrc $AWS_PROFILE com valor "eumesmo"

@@ -1,3 +1,18 @@
+# Install gitlab-runner Linux x86-64
+	- sudo curl -L --output /usr/local/bin/gitlab-runner https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-amd64
+	- sudo chmod +x /usr/local/bin/gitlab-runner
+	- sudo useradd --comment 'GitLab Runner' --create-home gitlab-runner --shell /bin/bash
+	- sudo gitlab-runner install --user=gitlab-runner --working-directory=/home/gitlab-runner
+   	- sudo gitlab-runner start
+    - sudo passwd gitlab-runner
+   	- sudo su gitlab-runner 
+   	- sudo visudo >  #includedir /etc/sudoers.d
+					 gitlab-runner ALL=(ALL) NOPASSWD: ALL
+   	- sudo su gitlab-runner 
+   	- sudo gitlab-runner register
+   	- sudo gitlab-runner start
+   	- $(aws ecr get-login --no-include-email --region us-east-2)
+   
 # Remover runners não mais utilizaveis:
 	- deletar tbm o runner no gitlab-runner > settings > ci/cd > runner
 	- sudo nano /etc/gitlab-runner/config.toml (*deletar os runners que não uso mais*)
