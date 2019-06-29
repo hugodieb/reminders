@@ -1,0 +1,9 @@
+# Rodar aplicação pelo wisg em dev
+	- dknginx
+	- criar as variaveis para conectar no banco (DJANGO_DB_NAME=aero \
+													DJANGO_DB_USER=aero \
+													DJANGO_DB_PASSWORD=aero123 \
+													DJANGO_DB_HOST=172.17.0.1) 
+	- dkrun_dev
+	- dk bash
+	- ./manage.py createsuper
