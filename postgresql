@@ -1,0 +1,6 @@
+# Criar um banco postgres pelo bash
+
+	- sudo su postgres
+	- createuser -d -SRP "um nome do usuario" (vai pedir para criar senha)
+	- createdb -O "nome do usuario criado" "nome do banco"
+	- psql -d nome do meu banco criado (só para verificar se o banco foi criado)
