@@ -1,0 +1,13 @@
+# Criar um banco postgres usando o aws rds.
+	- Dentro do rds escolher o banco postgres e a versão
+	- Configurar uma nome para instancia rds
+	- Configurar um nome para o banco
+	- Senha do banco
+	- O tipo de máquina (para teste escolhi a db.t2.micro)
+	- Subnet group default-vcp
+	- Security group escolhi o mesmo security group da minha ec2
+	- ** Dentro da security group da minha instancia ec2, adicionei uma nova rule
+			onde o source é o próprio id da security group e o range da porta
+			deixei aberta com 0 - 65535 pq sei que minha instancia vai conectar 
+			neste banco **
+	- Pronto só ./manage.py migrate e já elvis!!
