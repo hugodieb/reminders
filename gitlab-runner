@@ -26,3 +26,4 @@
 	- colocacar DOCKER_REGISTRY_TYPE=(tipo de instacia aws)
 		    DOCKER_REGISTRY=(meu ecr)
 		    CFGSTORE_HOST=ubuntu@(ip da minha instancia na aws)
+    - dentro do .bashrc do gitlab-runner colocar export AWS_profile=nome do meu usuario do aws
