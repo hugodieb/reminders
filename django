@@ -1,6 +1,7 @@
 # criar um projeto django
 	- com o mkvirtualenv instalado,
-	- mkvirtualenv aeroparts -p python3 (cria uma virtualenv)
+	- mkvirtualenv .env -p python3 (cria uma virtualenv de nome .env)
+	- workon .env (inicializa a virtualenv .env)
 	- criar um arquivo requirements.txt (colocar suas dependencias dentro ex. django==2.2.12)
 	- pip install -r requirements.txt (inicializa a instalacao das dependencias)
 	- django-admin startproject "nome do meu projeto"
