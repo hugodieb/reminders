@@ -4,7 +4,7 @@
 	- workon .env (inicializa a virtualenv .env)
 	- criar um arquivo requirements.txt (colocar suas dependencias dentro ex. django==2.2.12)
 	- pip install -r requirements.txt (inicializa a instalacao das dependencias)
-	- django-admin startproject "nome do meu projeto"
+	- django-admin startproject "nome do meu projeto" .
 	- cd "nome do meu projeto"
 	- ./manage.py runserver
 	- ir para o browser e digitar localhost:8000 (deve aparecer a pagina do django)
