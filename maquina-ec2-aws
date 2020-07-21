@@ -1,0 +1,28 @@
+** Criando uma máquina no aws **
+
+ - Já tenho uma imagem ubuntu em AMIS é só selecionar
+ - Clicar botão Launch
+ - Selecionar uma máquina (ex. t2 micro)
+ - Next 
+ - Next
+ - Pode aumentar o tamanho da cpu (default é 20G)
+ - Next
+ - Add tag (dar um nome para a sua cpu)
+ - Next
+ - Review and Launch
+ - Launch
+ - Aqui vç pode criar(ex: master.pem) ou utilizar uma chave que será usada para fazer ssh
+ - Ao concordar, será baixado um arquivo .pem mova-o para a pasta ~/.ssh/
+ - Dê um chmod 600 ~/.ssh/master.pem
+ - Copie o endereço dns da maquina que criou (ec2-3-129-87-114.us-east-2.compute.amazonaws.com)
+ - Testar se deu certo (ssh -i ~/.ssh/master.pem ubuntu@ec2-3-129-87-114.us-east-2.compute.amazonaws.com)
+ - O comando acima te acesso via shell ao terminal da sua máquina ec2
+ - Para simplificar o acesso a sua máquina na aws, faça o seguinte:
+ 	* No seu computador dê cat ~/.ssh/id_rsa.pub
+ 	* Copie o que estiver dentro
+ 	* Na máquina ec2 dê um nano ~/.ssh/authorized_keys
+ 	* Cole logo abaixo da outra chave que já exite lá
+ 	* Salve e feche o terminal aberto do ec2
+ 	* Agora dê o comando ssh ubuntu@ec2-3-129-87-114.us-east-2.compute.amazonaws.com
+ 	* Pronto o comando está simplificado para acesso a sua máquina ec2.
+ 	* Vç pode criar uma alias para rodar este comando e já acessar sua ec2.
