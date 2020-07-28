@@ -1,3 +1,14 @@
+# install virtualenv
+	-  sudo apt-get install python-pip
+	- sudo pip install virtualenv
+	- mkdir ~/.virtualenvs
+	- sudo pip install virtualenvwrapper
+	- sudo nano ~/.bashrc
+	- no final do .bashrc copiar e colar isso:
+	                       export WORKON_HOME=~/.virtualenvs
+						   source /usr/local/bin/virtualenvwrapper.sh
+	- abra um novo terminal e crie sua virtualenv no passo abaixo
+
 # criar um projeto django
 	- com o mkvirtualenv instalado,
 	- mkvirtualenv .env -p python3 (cria uma virtualenv de nome .env)
