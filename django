@@ -8,6 +8,7 @@
 	                       export WORKON_HOME=~/.virtualenvs
 						   source /usr/local/bin/virtualenvwrapper.sh
 	- abra um novo terminal e crie sua virtualenv no passo abaixo
+	
 
 # criar um projeto django
 	- com o mkvirtualenv instalado,
