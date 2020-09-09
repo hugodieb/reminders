@@ -7,10 +7,12 @@
         - sudo passwd gitlab-runner
    	- sudo su gitlab-runner
 	- adduser gitlab-runner sudo
+	- sudo usermod -aG docker gitlab-runner
    	- sudo visudo 
 	- abaixo disso #includedir /etc/sudoers.d
 	- colocar isso gitlab-runner ALL=(ALL) NOPASSWD: ALL
-   	- sudo su gitlab-runner 
+   	- sudo su gitlab-runner
+	- quando criar o runner no gitlab, desabilitar os runners shared primeiro
    	- sudo gitlab-runner register
    	- sudo gitlab-runner start
    	- $(aws ecr get-login --no-include-email --region us-east-2)
