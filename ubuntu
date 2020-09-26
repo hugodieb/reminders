@@ -1,0 +1,11 @@
+##mostrar portas em uso
+
+sudo netstat -tulpn
+
+## criar variaveis ambiente
+
+sudo nano /etc/bash.bashrc (cria uma variavel onde todos usuarios podem ter acesso)
+
+nano .bashrc (cria uma variavel só para o meu usuario)
+
+*dentro dps da última linha coloca export MINHA_ENV=valor*
