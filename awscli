@@ -17,3 +17,11 @@
 	- entrar em gitlab-runner
 	- aws configure --profile eumesmo (entra com as credenciais para o profile eumesmo)
 	- criar uma env dentro de .bashrc $AWS_PROFILE com valor "eumesmo"
+
+# Aqui eu instalei segui o processo acima porém instalei o gitlab-runner na própria máquina
+da minha aplicação ou seja eu tenho só uma ec2 no aws.
+
+# No meu usuario ubuntu eu criei a pasta .aws e coloquei os arquivos config e credentials lá dentro
+
+# Também tirei a variavel de ambiente $AWS_PROFILE do .bashrc do gitlab-runner e criei novamente 
+dentro do /etc/bash.basrc do meu usuario ubuntu para ficar disposnível para todos usuario da máquina.
