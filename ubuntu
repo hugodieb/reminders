@@ -2,6 +2,7 @@
 
 sudo netstat -tulpn
 
+
 ## criar variaveis ambiente
 
 sudo nano /etc/bash.bashrc (cria uma variavel onde todos usuarios podem ter acesso)
@@ -9,3 +10,10 @@ sudo nano /etc/bash.bashrc (cria uma variavel onde todos usuarios podem ter aces
 nano .bashrc (cria uma variavel só para o meu usuario)
 
 *dentro dps da última linha coloca export MINHA_ENV=valor*
+
+
+## Formatar pendrive pelo terminal
+	- mount
+	- sudo umount /dev/sdb1
+	- sudo mkfs -t vfat /dev/sdb1
+	- sudo eject /dev/sdb1
