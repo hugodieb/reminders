@@ -1,0 +1,8 @@
+# Install node e nvm
+    - sudo apt install nodejs
+    - nodejs --version 
+    - sudo apt install npm
+    - npm --version
+    
+# remover
+    - sudo apt-get purge --autoremove nodejs npm
