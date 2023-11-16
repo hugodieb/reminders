@@ -1,18 +1,18 @@
-Criar uma chave SSH e adicionar github, gitlab, ...
+# Criar uma chave SSH e adicionar github, gitlab, ...
 
-// Verificar se SSH está instalado
-- ssh -V
+# Verificar se SSH está instalado
+  - ssh -V
 
-// Verificar se já existe uma par de chaves SSH
-- ls -lah ~/.ssh
+# Verificar se já existe uma par de chaves SSH
+   ls -lah ~/.ssh
 
-//Gerar um novo par de chaves se não existir
-- ssh-keygen -t rsa -b 4096 -C "seuemail@exemplo.com.br"
+# Gerar um novo par de chaves se não existir
+  - ssh-keygen -t rsa -b 4096 -C "seuemail@exemplo.com.br"
 
-// Iniciar e adicionar a chave gerada ao agente SSH p não precisar digitar senha
-- eval "$(ssh-agent -s)"
-- ssh-add ~/.ssh/id_rsa
+# Iniciar e adicionar a chave gerada ao agente SSH p não precisar digitar senha
+  - eval "$(ssh-agent -s)"
+  - ssh-add ~/.ssh/id_rsa
 
-// Copiar e colar no github e gitlab sua id_rsa.pub
-- cat id_rsa.pub
+# Copiar e colar no github e gitlab sua id_rsa.pub
+  - cat id_rsa.pub
 
