@@ -14,5 +14,5 @@
   - ssh-add ~/.ssh/id_rsa
 
 # Copiar e colar no github e gitlab sua id_rsa.pub
-  - cat id_rsa.pub
+  - cat ~/.ssh/id_rsa.pub
 
