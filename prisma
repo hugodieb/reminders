@@ -1,0 +1,9 @@
+# Adicionar o prisma ao meu projeto com banco relacional
+
+    - yarn add prisma
+    - yarn add @prisma/client
+    - npx prisma init
+
+# Dentro do .env ajustar as configurações para conectar no banco
+
+    - DATABASE_URL="postgresql://postgres:postgres@localhost:5432/pizzafun?schema=public"
