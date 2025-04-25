@@ -1,0 +1,13 @@
+git --version
+clear
+git config --global user.name "hugodieb"
+git config --global user.email "hugodieb.hd@gmail.com"
+cd ..
+git init
+git branch -m master
+git init
+git add .
+git commit -m "Commit inicial do frontend apx-app"
+clear
+git remote add origin git@github.com:hugodieb/apx-app.git
+git push -u origin master
